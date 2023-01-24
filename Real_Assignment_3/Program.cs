@@ -54,12 +54,12 @@ namespace Driver
                 Random random = new Random();
                 double playerTurn = random.Next(1, 3);
 
-                bool winCondition = false;
+                char winCondition = 'F';
                 bool goodChoice = false;
                 int turnCount = 0;
 
                 //Start the game while loop
-                while (winCondition == false && turnCount < 9)
+                while (winCondition == 'F' && turnCount < 9)
                 {
 
                     // Ask each player in turn for their choice and update the game board array
@@ -69,7 +69,7 @@ namespace Driver
                         while (goodChoice == false)
                         {
                             Console.WriteLine("It's " + player1 + "'s turn");
-                            Print(positions);
+                            Board(positions);
                             Console.WriteLine("Choose where you want to place your X");
                             string userChoice = Console.ReadLine();
                             int choice = int.Parse(userChoice);
@@ -89,7 +89,7 @@ namespace Driver
                         {
 
                             Console.WriteLine("It's " + player2 + "'s turn");
-                            Print(positions);
+                            Board(positions);
                             Console.WriteLine("Choose where you want to place your O");
                             string userChoice = Console.ReadLine();
                             int choice = int.Parse(userChoice);
