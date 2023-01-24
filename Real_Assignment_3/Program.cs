@@ -69,7 +69,7 @@ namespace Driver
                         while (goodChoice == false)
                         {
                             Console.WriteLine("It's " + player1 + "'s turn");
-                            Board(positions);
+                            Print(positions);
                             Console.WriteLine("Choose where you want to place your X");
                             string userChoice = Console.ReadLine();
                             int choice = int.Parse(userChoice);
@@ -89,7 +89,7 @@ namespace Driver
                         {
 
                             Console.WriteLine("It's " + player2 + "'s turn");
-                            Board(positions);
+                            Print(positions);
                             Console.WriteLine("Choose where you want to place your O");
                             string userChoice = Console.ReadLine();
                             int choice = int.Parse(userChoice);
