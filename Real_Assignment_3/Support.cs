@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Mission3SupportingClass
+namespace Mission3
 {
-    class Support
+    public class Support
     {
         // Print board with values given in array
-        public void Print(char[] board)
+        public static void Print(char[] board)
         {
             Console.WriteLine("     |     |      ");
             Console.WriteLine("  {0}  |  {1}  |  {2}", board[0], board[1], board[2]);
@@ -20,7 +20,7 @@ namespace Mission3SupportingClass
             Console.WriteLine("     |     |      ");
         }
 
-        public char Check(char[] board)
+        public static char Check(char[] board)
         {
             // Initialize results to F signifing no winner
             char result = 'F';
